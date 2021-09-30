@@ -1,31 +1,11 @@
-// Code by -
-// Name : Gyandeep Kalita
-// Scholar ID : 2012056
+/* Code by -
+ Name : Gyandeep Kalita
+ Scholar ID : 2012056 */
 
 
 #include<stdio.h>
-#include<string.h>
 
-void stringAdd(char first_num[], char second_num[], char result[]){
-    
-    int carry = 0;
-    
-    for(int i=9999; i>=0; i--){
-        result[i] = (((first_num[i] - '0') + (second_num[i] - '0') + carry)%10) + '0';
-        carry = ((first_num[i] - '0') + (second_num[i] - '0') + carry)/10;
-    }
-    
-}
-
-void stringShift(char s1[], char s2[]){
-    
-    for(int i=9999; i>=0; i--){
-        s2[i] = s1[i];
-    }
-    
-}
-    
-
+//This is the function that conatains the basic logic to find the nth Fibonacci number.
 void fibonacci(int n,char first_num[],char second_num[],char result[]){
     
     second_num[9999] = '1';
@@ -38,6 +18,28 @@ void fibonacci(int n,char first_num[],char second_num[],char result[]){
    
 }
 
+//This function adds numbers stored as strings in the character arrays.
+void stringAdd(char first_num[], char second_num[], char result[]){
+    
+    int carry = 0;
+    
+    for(int i=9999; i>=0; i--){
+        result[i] = (((first_num[i] - '0') + (second_num[i] - '0') + carry)%10) + '0';
+        carry = ((first_num[i] - '0') + (second_num[i] - '0') + carry)/10;
+    }
+    
+}
+
+//This function copies the values from the first character array to the second array.
+void stringShift(char s1[], char s2[]){
+    
+    for(int i=9999; i>=0; i--){
+        s2[i] = s1[i];
+    }
+    
+}
+
+//Declaration of character arrays.
 char first_num[10000];
 char second_num[10000];
 char result[10000];
