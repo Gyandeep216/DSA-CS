@@ -25,7 +25,7 @@ void stringShift(char s1[], char s2[]){
     
 }
 
-//This is the function that conatains the basic logic to find the nth Fibonacci number.
+//This is the function that contains the basic logic to find the nth Fibonacci number.
 void fibonacci(int n,char first_num[],char second_num[],char result[]){
     
     second_num[9999] = '1';
@@ -62,10 +62,8 @@ int main (){
         return 0;
     }
     
-    
     fibonacci(n,first_num,second_num,result);
    
-    
     printf("The required number is: ");
     
     int flag = 0;
