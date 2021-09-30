@@ -2,7 +2,6 @@
  Name : Gyandeep Kalita
  Scholar ID : 2012056 */
 
-
 #include<stdio.h>
 
 //This function adds numbers stored as strings in the character arrays.
